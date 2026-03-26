@@ -6,7 +6,7 @@ build-frontend:
 build: build-frontend
 
 dev:
-	PYTHONPATH=src uvicorn kitkat.main:app --reload
+	PYTHONPATH=src uv run uvicorn kitkat.main:app --reload
 
 dev-frontend:
 	cd frontend && npm run dev
